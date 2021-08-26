@@ -32,7 +32,7 @@ def main():
 				
 				if link['href'].startswith('https://www.youtube.com/channel/'):
 					xml = 'https://www.youtube.com/feeds/videos.xml?channel_id='
-					channel_id = link['href'][len('https://www.youtube.com/channel/'):]
+					channel_id = link['href'][32:]
 
 					if channel_id in existing_channel_ids:
 						print('You are already subscribed to ' + channel_name)
