@@ -29,6 +29,7 @@ def main():
 
 			links = soup.findAll('link', href=True)
 			for link in links:
+				
 				if link['href'].startswith('https://www.youtube.com/channel/'):
 					xml = 'https://www.youtube.com/feeds/videos.xml?channel_id='
 					channel_id = link['href'][len('https://www.youtube.com/channel/'):]
