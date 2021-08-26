@@ -3,7 +3,7 @@ long_desc = open("README.md").read()
 required = ["setuptools>=42", "wheel", "beautifulsoup4"] # Comma seperated dependent libraries name
 setuptools.setup(
     name="newsboat-subscribe",
-    version="1.0.1", # eg:1.0.0
+    version="1.0.2", # eg:1.0.0
     author="Jonathan Li",
     license="MIT License",
     entry_points={
